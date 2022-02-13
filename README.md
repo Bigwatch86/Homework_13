@@ -12,3 +12,15 @@
 :eight_spoked_asterisk:	 Уведомления в Telegram с использованием бота
 
 :eight_spoked_asterisk:	 Пример запуска теста в Selenoid
+
+
+<h2>:books:	 Стек технологий</h2>
+
+<img src="images/logo/Allure_Report.svg" height="48" width="48">
+<img src="images/logo/GitHub.svg" height="48" width="48">
+<img src="images/logo/Gradle.svg" height="48" width="48">
+<img src="images/logo/Intelij_IDEA.svg" height="48" width="48">
+<img src="images/logo/JUnit5.svg" height="48" width="48">
+<img src="images/logo/Selenide.svg" height="48" width="48">
+<img src="images/logo/Selenoid.svg" height="48" width="48">
+<img src="images/logo/Telegram.svg" height="48" width="48">
