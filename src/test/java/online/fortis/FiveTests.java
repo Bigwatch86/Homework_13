@@ -1,10 +1,7 @@
 package online.fortis;
 
 import io.qameta.allure.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -13,14 +10,14 @@ import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
 
-    @BeforeEach
+    @BeforeAll
     void openPage(){
         step("Открываем страницу", () -> {
             open("https://www.citilink.ru/");
         });
     }
 
-    @AfterEach
+    @AfterAll
     void closePage() {
         closeWebDriver();
     }
