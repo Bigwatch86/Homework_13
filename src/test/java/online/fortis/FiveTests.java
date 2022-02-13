@@ -1,66 +1,89 @@
 package online.fortis;
 
+import io.qameta.allure.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
-    @Test
-    public void fillPracticeFormTests() {
-        step("Открываем страницу с формами", () -> {
-            open("https://demoqa.com/automation-practice-form");
-        });
-        //fill form
-        step("Вводим имя", () -> {
-            $("#firstName").setValue("FirstName");
-        });
-        step("Вводим фамилию", () -> {
-            $("#lastName").setValue("LastName");
-        });
-        step("Вводим email", () -> {
-            $("#userEmail").setValue("test@test.ru");
-        });
-        step("Выбираем пол", () -> {
-            $("[for='gender-radio-3']").click();
-        });
-        step("Вводим телефон", () -> {
-            $("#userNumber").setValue("9991234567");
-        });
-        step("выбираем дату рождения", () -> {
-            $("#dateOfBirthInput").click();
-            $(".react-datepicker__month-select").selectOption("August");
-            $(".react-datepicker__year-select").selectOption("1986");
-            $(".react-datepicker__day--012").click();
-        });
-        step("Выбираеи предметы", () -> {
-            $("#subjectsInput").setValue("English").pressEnter();
-            $("#subjectsInput").setValue("Computer Science").pressEnter();
-        });
-        step("Выбираем хобби", () -> {
-            $("[for=hobbies-checkbox-1]").click();
-            $("[for=hobbies-checkbox-3]").click();
-        });
-        step("Вводим адрес", () -> {
-            $("#currentAddress").setValue("Any Address");
-        });
-        step("Выбираем штат и город", () -> {
-            $("#react-select-3-input").setValue("Haryana").pressEnter();
-            $("#react-select-4-input").setValue("Karnal").pressEnter();
-        });
-        step("Нажимаем submit", () -> {
-            $("#submit").click();
-        });
 
-        // check result
-        step("Проверка результата", () -> {
-            $("#example-modal-sizes-title-lg").shouldBe(visible);
-            $(".table-responsive").shouldHave(text("FirstName"), text("LastName"), text("test@test.ru"),
-                    text("Other"), text("9991234567"), text("12 August,1986"), text("English, Computer Science"),
-                    text("Sports, Music"), /*text("Glazov.txt"),*/ text("Any Address"), text("Haryana Karnal"));
+    @BeforeEach
+    void openPage(){
+        step("Открываем страницу", () -> {
+            open("https://www.citilink.ru/");
+        });
+    }
+
+    @AfterEach
+    void closePage() {
+        closeWebDriver();
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка загрузки header")
+    @Severity(SeverityLevel.BLOCKER)
+    public void headerLoading() {
+        step("Проверяем загрузку header", () -> {
+            $(".MainLayout__header").shouldBe(visible);
+            $(".MainLayout__header placeholder").shouldHave(text("Поиск по товарам"));
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка работы поиска")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем работу поиска", () -> {
+            $(".InputBox__input").setValue("Ноутбуки").pressEnter();
+            $(".Container").shouldHave(text("Ноутбуки"));
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка наличия корзины")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем наличие корзины", () -> {
+            $("HeaderMenu__buttons  HeaderMenu__buttons_basket").shouldBe(visible);
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка наличия каталога товаров")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем наличие каталога товаров", () -> {
+            $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка загрузки каталога товаров")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем загрузку каталога товаров", () -> {
+            $(".CatalogMenu__left span").shouldHave(text("Каталог"));
         });
     }
 }
