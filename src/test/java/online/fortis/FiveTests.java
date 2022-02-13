@@ -34,6 +34,7 @@ public class FiveTests extends TestBase{
     public void searchCheck(){
         step("Проверяем работу поиска", () -> {
             open("https://www.citilink.ru/");
+            $(".InputBox__input").shouldBe(visible);
             $(".InputBox__input").setValue("Ноутбуки");
             $(".InputBox__icon button").click();
             $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
