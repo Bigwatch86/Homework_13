@@ -10,14 +10,14 @@ import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
 
-    @BeforeAll
+    @BeforeEach
     void openPage(){
         step("Открываем страницу", () -> {
             open("https://www.citilink.ru/");
         });
     }
 
-    @AfterAll
+    @AfterEach
     void closePage() {
         closeWebDriver();
     }
