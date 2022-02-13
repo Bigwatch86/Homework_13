@@ -57,7 +57,7 @@ public class FiveTests extends TestBase{
     //@Story("Проверка загрузки")
     @DisplayName("Проверка наличия корзины")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchCheck(){
+    public void searchBasket(){
         step("Проверяем наличие корзины", () -> {
             $("HeaderMenu__buttons  HeaderMenu__buttons_basket").shouldBe(visible);
         });
@@ -69,7 +69,7 @@ public class FiveTests extends TestBase{
     //@Story("Проверка загрузки")
     @DisplayName("Проверка наличия каталога товаров")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchCheck(){
+    public void catalogIsVisible(){
         step("Проверяем наличие каталога товаров", () -> {
             $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
         });
@@ -81,7 +81,7 @@ public class FiveTests extends TestBase{
     //@Story("Проверка загрузки")
     @DisplayName("Проверка загрузки каталога товаров")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchCheck(){
+    public void catalogLoading(){
         step("Проверяем загрузку каталога товаров", () -> {
             $(".CatalogMenu__left span").shouldHave(text("Каталог"));
         });
