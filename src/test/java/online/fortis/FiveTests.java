@@ -10,18 +10,6 @@ import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
 
-//    @BeforeEach
-//    void openPage(){
-//        step("Открываем страницу", () -> {
-//            open("https://www.citilink.ru/");
-//        });
-//    }
-//
-//    @AfterEach
-//    void closePage() {
-//        closeWebDriver();
-//    }
-
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
@@ -33,22 +21,25 @@ public class FiveTests extends TestBase{
             open("https://www.citilink.ru/");
             $(".Container").shouldBe(visible);
             $(".Container .MainHeader__logo").shouldBe(visible);
+            closeWebDriver();
         });
     }
 
-//    @Test
-//    @Owner("igor.glazov")
-//    @Feature("Citilink")
-//    //@Story("Проверка загрузки")
-//    @DisplayName("Проверка работы поиска")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void searchCheck(){
-//        step("Проверяем работу поиска", () -> {
-//            $(".InputBox__input").setValue("Ноутбуки");
-//            $(".InputBox__icon button").click();
-//            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
-//        });
-//    }
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка работы поиска")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем работу поиска", () -> {
+            open("https://www.citilink.ru/");
+            $(".InputBox__input").setValue("Ноутбуки");
+            $(".InputBox__icon button").click();
+            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
+            closeWebDriver();
+        });
+    }
 //
 //    @Test
 //    @Owner("igor.glazov")
