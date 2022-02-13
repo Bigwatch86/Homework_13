@@ -30,8 +30,8 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void headerLoading() {
         step("Проверяем загрузку header", () -> {
-            $(".MainLayout__header").shouldBe(visible);
-            $(".MainLayout__header placeholder").shouldHave(text("Поиск по товарам"));
+            $(".Container").shouldBe(visible);
+            $(".Container .MainHeader__logo").shouldBe(visible);
         });
     }
 
@@ -43,8 +43,9 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void searchCheck(){
         step("Проверяем работу поиска", () -> {
-            $(".InputBox__input").setValue("Ноутбуки").pressEnter();
-            $(".Container").shouldHave(text("Ноутбуки"));
+            $(".InputBox__input").setValue("Ноутбуки");
+            $(".InputBox__icon button").click();
+            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
         });
     }
 
@@ -56,7 +57,7 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void searchBasket(){
         step("Проверяем наличие корзины", () -> {
-            $("HeaderMenu__buttons  HeaderMenu__buttons_basket").shouldBe(visible);
+            $("HeaderMenu__buttons_basket").shouldBe(visible);
         });
     }
 
@@ -80,7 +81,8 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void catalogLoading(){
         step("Проверяем загрузку каталога товаров", () -> {
-            $(".CatalogMenu__left span").shouldHave(text("Каталог"));
+            $("[data-label=\"Каталог товаров\"]").click();
+            $(".CatalogMenu__category").shouldBe(visible);
         });
     }
 }
