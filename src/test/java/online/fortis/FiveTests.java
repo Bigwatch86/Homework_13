@@ -10,6 +10,9 @@ import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
 
+    @BeforeEach
+
+
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
@@ -18,7 +21,6 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void headerLoading() {
         step("Проверяем загрузку header", () -> {
-            open("https://www.citilink.ru/");
             $(".Container").shouldBe(visible);
             $(".Container .MainHeader__logo").shouldBe(visible);
             closeWebDriver();
@@ -33,7 +35,6 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void searchCheck(){
         step("Проверяем работу поиска", () -> {
-            open("https://www.citilink.ru/");
             $(".InputBox__input").shouldBe(visible);
             $(".InputBox__input").setValue("Ноутбуки");
             $(".InputBox__icon button").click();
