@@ -18,7 +18,6 @@ public class FiveTests extends TestBase{
     @Severity(SeverityLevel.BLOCKER)
     public void headerLoading() {
         step("Проверяем загрузку header", () -> {
-            open("https://www.citilink.ru/");
             $(".Container").shouldBe(visible);
             $(".Container .MainHeader__logo").shouldBe(visible);
         });
