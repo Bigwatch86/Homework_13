@@ -23,55 +23,55 @@ public class FiveTests extends TestBase{
         });
     }
 
+//    @Test
+//    @Owner("igor.glazov")
+//    @Feature("Citilink")
+//    //@Story("Проверка загрузки")
+//    @DisplayName("Проверка работы поиска")
+//    @Severity(SeverityLevel.BLOCKER)
+//    public void searchCheck(){
+//        step("Проверяем работу поиска", () -> {
+//            $(".InputBox__container").shouldBe(visible);
+//            $(".InputBox__input").setValue("Ноутбуки");
+//            $(".InputBox__icon button").click();
+//            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
+//        });
+//    }
+//
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
     //@Story("Проверка загрузки")
-    @DisplayName("Проверка работы поиска")
+    @DisplayName("Проверка наличия корзины")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchCheck(){
-        step("Проверяем работу поиска", () -> {
-            $(".InputBox__input").shouldBe(visible);
-            $(".InputBox__input").setValue("Ноутбуки");
-            $(".InputBox__icon button").click();
-            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
+    public void searchBasket(){
+        step("Проверяем наличие корзины", () -> {
+            $(".HeaderMenu__buttons_basket").shouldBe(visible);
         });
     }
-//
-//    @Test
-//    @Owner("igor.glazov")
-//    @Feature("Citilink")
-//    //@Story("Проверка загрузки")
-//    @DisplayName("Проверка наличия корзины")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void searchBasket(){
-//        step("Проверяем наличие корзины", () -> {
-//            $("HeaderMenu__buttons_basket").shouldBe(visible);
-//        });
-//    }
-//
-//    @Test
-//    @Owner("igor.glazov")
-//    @Feature("Citilink")
-//    //@Story("Проверка загрузки")
-//    @DisplayName("Проверка наличия каталога товаров")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void catalogIsVisible(){
-//        step("Проверяем наличие каталога товаров", () -> {
-//            $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
-//        });
-//    }
-//
-//    @Test
-//    @Owner("igor.glazov")
-//    @Feature("Citilink")
-//    //@Story("Проверка загрузки")
-//    @DisplayName("Проверка загрузки каталога товаров")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void catalogLoading(){
-//        step("Проверяем загрузку каталога товаров", () -> {
-//            $("[data-label=\"Каталог товаров\"]").click();
-//            $(".CatalogMenu__category").shouldBe(visible);
-//        });
-//    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка наличия каталога товаров")
+    @Severity(SeverityLevel.BLOCKER)
+    public void catalogIsVisible(){
+        step("Проверяем наличие каталога товаров", () -> {
+            $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
+    //@Story("Проверка загрузки")
+    @DisplayName("Проверка загрузки каталога товаров")
+    @Severity(SeverityLevel.BLOCKER)
+    public void catalogLoading(){
+        step("Проверяем загрузку каталога товаров", () -> {
+            $("[data-label=\"Каталог товаров\"]").click();
+            $(".CatalogMenu__category").shouldBe(visible);
+        });
+    }
 }
