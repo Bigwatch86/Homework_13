@@ -19,7 +19,7 @@ public class TestBase {
         String login = System.getProperty("login");
         String password = System.getProperty("password");
 
-        Configuration.baseUrl = "https://www.citilink.ru/";
+        //Configuration.baseUrl = "https://www.citilink.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.browser = browser;
         Configuration.browserVersion = version;
