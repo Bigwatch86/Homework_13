@@ -30,7 +30,7 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
     }
     @BeforeEach
-    static void URL(){
+    void baseURL(){
         Configuration.baseUrl = "https://www.citilink.ru/";
     }
 
