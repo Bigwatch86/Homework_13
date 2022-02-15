@@ -25,12 +25,14 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка наличия избранного")
+    @DisplayName("Специальный падающий тест")
     @Severity(SeverityLevel.BLOCKER)
     public void searchWishlist(){
         step("Проверяем наличие избранного", () -> {
             $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
             $(".HeaderMenu__buttons_wishlist").click();
+        });
+        step("Нет избранного, так как пользователь не залогинен", () -> {
             $("h2").shouldHave(text("Избранное"));
         });
     }
