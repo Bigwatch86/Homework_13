@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
 public class TestBase {
@@ -18,7 +19,7 @@ public class TestBase {
         String login = System.getProperty("login");
         String password = System.getProperty("password");
 
-        //Configuration.baseUrl = "https://www.citilink.ru/";
+        Configuration.baseUrl = "https://www.citilink.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.browser = browser;
         Configuration.browserVersion = version;
@@ -29,10 +30,10 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
     }
-//    @BeforeEach
-//    void baseURL(){
-//        Configuration.baseUrl = "https://www.citilink.ru/";
-//    }
+    @BeforeEach
+    void baseURL(){
+        open("https://www.citilink.ru/");
+    }
 
     @AfterEach
     void addAttachments() {
