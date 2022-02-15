@@ -25,13 +25,11 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка открытия журнала")
+    @DisplayName("Проверка наличия корзины")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchCheck(){
-        step("Открываем журнал", () -> {
-            $(".MainMenu__link a").shouldBe(visible);
-            $(".MainMenu__link a").click();
-            $("header div").shouldHave(text(""));
+    public void searchWishlist(){
+        step("Проверяем наличие корзины", () -> {
+            $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
         });
     }
 
@@ -49,14 +47,11 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка наличия избранного")
+    @DisplayName("Проверка наличия каталога товаров")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchWishlist(){
-        step("Проверяем наличие избранного", () -> {
-            $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
-            $(".HeaderMenu__buttons_wishlist").click();
-            $("h2").shouldHave(text("Избранное"));
-
+    public void catalogIsVisible(){
+        step("Проверяем наличие каталога товаров", () -> {
+            $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
         });
     }
 
