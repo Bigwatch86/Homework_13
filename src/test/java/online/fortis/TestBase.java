@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
@@ -17,7 +18,7 @@ public class TestBase {
         String login = System.getProperty("login");
         String password = System.getProperty("password");
 
-        Configuration.baseUrl = "https://www.citilink.ru/";
+        //Configuration.baseUrl = "https://www.citilink.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.browser = browser;
         Configuration.browserVersion = version;
@@ -27,6 +28,10 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
+    }
+    @BeforeEach
+    static void URL(){
+        Configuration.baseUrl = "https://www.citilink.ru/";
     }
 
     @AfterEach
