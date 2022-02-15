@@ -29,10 +29,10 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
     }
-    @BeforeEach
-    void baseURL(){
-        Configuration.baseUrl = "https://www.citilink.ru/";
-    }
+//    @BeforeEach
+//    void baseURL(){
+//        Configuration.baseUrl = "https://www.citilink.ru/";
+//    }
 
     @AfterEach
     void addAttachments() {
