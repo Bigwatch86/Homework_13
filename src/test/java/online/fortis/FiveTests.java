@@ -25,15 +25,13 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка работы поиска")
+    @DisplayName("Проверка открытия журнала")
     @Severity(SeverityLevel.BLOCKER)
     public void searchCheck(){
-        step("Проверяем работу поиска", () -> {
-            $(".InputSearch__container-input").shouldBe(visible);
-            $(".InputSearch__container-input").click();
-            $("..InputSearch__container-input").setValue("Ноутбуки");
-            $(".InputBox__icon button").click();
-            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
+        step("Открываем журнал", () -> {
+            $(".MainMenu__link a").shouldBe(visible);
+            $(".MainMenu__link a").click();
+            $("header div").shouldHave(text(""));
         });
     }
 
@@ -51,11 +49,14 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка наличия каталога товаров")
+    @DisplayName("Проверка наличия избранного")
     @Severity(SeverityLevel.BLOCKER)
-    public void catalogIsVisible(){
-        step("Проверяем наличие каталога товаров", () -> {
-            $("[data-label=\"Каталог товаров\"]").shouldBe(visible);
+    public void searchBasket(){
+        step("Проверяем наличие избранного", () -> {
+            $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
+            $(".HeaderMenu__buttons_wishlist").click();
+            $("h2").shouldHave(text("Избранное"));
+
         });
     }
 
