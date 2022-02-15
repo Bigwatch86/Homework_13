@@ -10,9 +10,6 @@ import static io.qameta.allure.Allure.step;
 
 public class FiveTests extends TestBase{
 
-    @BeforeEach
-
-
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
@@ -23,7 +20,6 @@ public class FiveTests extends TestBase{
         step("Проверяем загрузку header", () -> {
             $(".Container").shouldBe(visible);
             $(".Container .MainHeader__logo").shouldBe(visible);
-            closeWebDriver();
         });
     }
 
@@ -39,7 +35,6 @@ public class FiveTests extends TestBase{
             $(".InputBox__input").setValue("Ноутбуки");
             $(".InputBox__icon button").click();
             $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
-            closeWebDriver();
         });
     }
 //
