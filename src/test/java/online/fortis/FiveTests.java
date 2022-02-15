@@ -51,7 +51,7 @@ public class FiveTests extends TestBase{
     @Feature("Citilink")
     @DisplayName("Проверка наличия избранного")
     @Severity(SeverityLevel.BLOCKER)
-    public void searchBasket(){
+    public void searchWishlist(){
         step("Проверяем наличие избранного", () -> {
             $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
             $(".HeaderMenu__buttons_wishlist").click();
