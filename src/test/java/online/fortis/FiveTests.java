@@ -13,7 +13,6 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    //@Story("Проверка загрузки")
     @DisplayName("Проверка загрузки header")
     @Severity(SeverityLevel.BLOCKER)
     public void headerLoading() {
@@ -23,25 +22,24 @@ public class FiveTests extends TestBase{
         });
     }
 
-//    @Test
-//    @Owner("igor.glazov")
-//    @Feature("Citilink")
-//    //@Story("Проверка загрузки")
-//    @DisplayName("Проверка работы поиска")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void searchCheck(){
-//        step("Проверяем работу поиска", () -> {
-//            $(".InputBox__container").shouldBe(visible);
-//            $(".InputBox__input").setValue("Ноутбуки");
-//            $(".InputBox__icon button").click();
-//            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
-//        });
-//    }
-//
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    //@Story("Проверка загрузки")
+    @DisplayName("Проверка работы поиска")
+    @Severity(SeverityLevel.BLOCKER)
+    public void searchCheck(){
+        step("Проверяем работу поиска", () -> {
+            $(".InputSearch__container-input").shouldBe(visible);
+            $(".InputSearch__container-input").click();
+            $("..InputSearch__container-input").setValue("Ноутбуки");
+            $(".InputBox__icon button").click();
+            $(".Subcategory__title-container h1").shouldHave(text("Ноутбуки"));
+        });
+    }
+
+    @Test
+    @Owner("igor.glazov")
+    @Feature("Citilink")
     @DisplayName("Проверка наличия корзины")
     @Severity(SeverityLevel.BLOCKER)
     public void searchBasket(){
@@ -53,7 +51,6 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    //@Story("Проверка загрузки")
     @DisplayName("Проверка наличия каталога товаров")
     @Severity(SeverityLevel.BLOCKER)
     public void catalogIsVisible(){
@@ -65,7 +62,6 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    //@Story("Проверка загрузки")
     @DisplayName("Проверка загрузки каталога товаров")
     @Severity(SeverityLevel.BLOCKER)
     public void catalogLoading(){
