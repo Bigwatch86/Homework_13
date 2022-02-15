@@ -25,11 +25,13 @@ public class FiveTests extends TestBase{
     @Test
     @Owner("igor.glazov")
     @Feature("Citilink")
-    @DisplayName("Проверка наличия корзины")
+    @DisplayName("Проверка наличия избранного")
     @Severity(SeverityLevel.BLOCKER)
     public void searchWishlist(){
-        step("Проверяем наличие корзины", () -> {
+        step("Проверяем наличие избранного", () -> {
             $(".HeaderMenu__buttons_wishlist").shouldBe(visible);
+            $(".HeaderMenu__buttons_wishlist").click();
+            $("h2").shouldHave(text("Избранное"));
         });
     }
 
