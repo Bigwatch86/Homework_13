@@ -32,8 +32,6 @@
 
 <h2>:arrow_forward:	 Запуск тестов в Jenkins</h2>
 <p>Для запуска тестов используется инструмент CI/CD под названием <b>Jenkins</b></p>
-</br>
-</br>
 
 ```
 clean
@@ -49,6 +47,18 @@ test
 <p><code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.</p>
 <p><code>LOGIN</code> - логин для авторизации на удалённом сервере.</p>
 <p><code>PASSWORD</code> - пароль для авторизации на удалённом сервере.</p>
+
+<h3>:large_blue_diamond:	 Процесс запуска происходит следующим образом:</h3>
+
+<p><b>На странице сборки выбираем "Собрать с параметрами": </b>
+</br>
+<img title="Jenkins" src="images/screenshots/jenkins_1.png">
+</p>
+
+<p><b>Выбираем необходимые параметры запуска и нажимаем "Собрать": </b>
+</br>
+<img title="Jenkins" src="images/screenshots/jenkins_2.png">
+</p>
 
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
