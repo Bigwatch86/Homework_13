@@ -1,8 +1,5 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%231AA432&size=50&duration=5000&center=true&vCenter=true&multiline=true&width=900&height=150&lines=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%D0%BF%D0%BE+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8;%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F+%D1%81%D0%B0%D0%B9%D1%82%D0%B0+citilink.ru)](https://git.io/typing-svg)
 
-
-<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
-
 <h1>:bookmark_tabs: Содержание</h1>
 
 :eight_spoked_asterisk:	 Стек технологий
@@ -48,8 +45,11 @@ test
 
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
-### Страница с обощёнными данными по отчёту
+<p>Страница с обощёнными данными по отчёту</p>
 
 <p align="center">
 <img title="Allure Overview" src="images/screenshots/overview.png">
 </p>
+
+
+<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
