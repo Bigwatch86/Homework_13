@@ -16,10 +16,26 @@
 
 <h2>:books:	 Стек технологий</h2>
 
-<img src="images/logo/Allure_Report.svg" height="48" width="48"> <img src="images/logo/GitHub.svg" height="48" width="48">
+<img src="images/logo/Allure_Report.svg" height="48" width="48"> 
+<img src="images/logo/GitHub.svg" height="48" width="48">
 <img src="images/logo/Gradle.svg" height="48" width="48">
 <img src="images/logo/Intelij_IDEA.svg" height="48" width="48">
 <img src="images/logo/JUnit5.svg" height="48" width="48">
 <img src="images/logo/Selenide.svg" height="48" width="48">
 <img src="images/logo/Selenoid.svg" height="48" width="48">
 <img src="images/logo/Telegram.svg" height="48" width="48">
+
+
+<h2>:books:	 Запуск тестов в Jenkins</h2>
+
+```
+clean
+test
+-Dbrowser=${BROWSER}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DbrowserMobileView="${BROWSER_MOBILE}"
+-DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
+-DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
+-Dthreads=${THREADS}
+```
