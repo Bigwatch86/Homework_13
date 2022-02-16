@@ -50,13 +50,13 @@ test
 
 <h3>:large_blue_diamond:	 Процесс запуска происходит следующим образом:</h3>
 
-<p><b>На странице сборки выбираем "Собрать с параметрами": </b>
+<p><i>На странице сборки выбираем "Собрать с параметрами": </i>
 </br>
 </br>
 <img title="Jenkins" src="images/screenshots/jenkins_1.png">
 </p>
 
-<p><b>Выбираем необходимые параметры запуска и нажимаем "Собрать": </b>
+<p><i>Выбираем необходимые параметры запуска и нажимаем "Собрать": </i>
 </br>
 </br>
 <img title="Jenkins" src="images/screenshots/jenkins_2.png">
@@ -88,6 +88,14 @@ test
 </br>
 </br>
 <img title="Telegram notification" src="images/screenshots/telegram_message.png">
+</p>
+
+
+<h2>:cinema:	 Пример запуска теста в Selenoid</h2>
+<p><i>К каждому тесту в отчете прилагается видео. </i>
+</br>
+</br>
+<img title="Selenoid" src="images/screenshots/selenoid.gif">
 </p>
 
 
