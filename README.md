@@ -45,7 +45,7 @@ test
 
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
-<h3>Страница с обощёнными данными по отчёту</h3>
+<h3>Страница с обобщёнными данными по отчёту</h3>
 
 <p align="center">
 <img title="Allure Overview" src="images/screenshots/overview.png">
@@ -54,8 +54,17 @@ test
 <h3>Страница с графической информацией</h3>
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/overview.png">
+<img title="Allure Overview" src="images/screenshots/graphs.png">
 </p>
+
+<h3>Страница с описанием шагов теста</h3>
+
+<p align="center">
+<img title="Allure Overview" src="images/screenshots/behaviors.png">
+</p>
+
+
+
 
 
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
