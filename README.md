@@ -51,5 +51,11 @@ test
 <img title="Allure Overview" src="images/screenshots/overview.png">
 </p>
 
+<h3>Страница с графической информацией</h3>
+
+<p align="center">
+<img title="Allure Overview" src="images/screenshots/overview.png">
+</p>
+
 
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
