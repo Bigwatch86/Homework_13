@@ -92,7 +92,7 @@ test
 
 
 <h2>:cinema:	 Пример запуска теста в Selenoid</h2>
-<p><i>К каждому тесту в отчете прилагается видео. </i>
+<p><i>К каждому тесту в отчете прилагается видео: </i>
 </br>
 </br>
 <img title="Selenoid" src="images/screenshots/selenoid.gif">
