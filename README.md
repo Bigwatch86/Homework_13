@@ -45,26 +45,29 @@ test
 
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
-<h3>Страница с обобщёнными данными по отчёту</h3>
+<h3>Страница с обобщёнными данными по отчёту:</h3>
 
 <p align="center">
 <img title="Allure Overview" src="images/screenshots/overview.png">
 </p>
 
-<h3>Страница с графической информацией</h3>
+<h3>Страница с графической информацией:</h3>
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/graphs.png">
+<img title="Allure Graphs" src="images/screenshots/graphs.png">
 </p>
 
-<h3>Страница с описанием шагов теста</h3>
+<h3>Страница с описанием шагов теста:</h3>
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/behaviors.png">
+<img title="Allure Behaviors" src="images/screenshots/behaviors.png">
 </p>
 
 
-
+<h2>:mailbox_with_mail:	 Уведомления в Telegram</h2>
+<p align="center">
+<img title="Telegram notification" src="images/screenshots/telegram_message.png">
+</p>
 
 
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
