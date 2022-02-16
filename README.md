@@ -62,6 +62,10 @@ test
 <img title="Jenkins" src="images/screenshots/jenkins_2.png">
 </p>
 
+<p><i>После окончания сборки нам доступен отчет в Allure Report, посмотреть который можно, нажав на соответствующий значок:</i>
+<img title="Jenkins" src="images/screenshots/jenkins_3.png">
+</br>
+
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
 <h3>:large_orange_diamond:	 Страница с обобщёнными данными по отчёту:</h3>
