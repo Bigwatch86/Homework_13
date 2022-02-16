@@ -88,7 +88,7 @@ test
 
 
 <h2>:mailbox_with_mail:	 Уведомления в Telegram с использованием бота</h2>
-<p><i>После окончания сборки в Телеграм отправляется уведомление со ссылкой на отчёт. </i>
+<p><i>После окончания сборки в Телеграм отправляется уведомление со ссылкой на отчёт: </i>
 </br>
 </br>
 <img title="Telegram notification" src="images/screenshots/telegram_message.png">
@@ -103,4 +103,6 @@ test
 </p>
 
 
+<h3>:wink:		Time for jokes</h3>
+</br>
 <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
