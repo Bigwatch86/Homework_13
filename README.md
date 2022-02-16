@@ -42,3 +42,8 @@ test
 -Dlogin=${LOGIN}
 -Dpassword=${PASSWORD}
 ```
+
+
+<h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
+
+
