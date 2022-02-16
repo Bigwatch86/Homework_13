@@ -31,7 +31,9 @@
 
 
 <h2>:arrow_forward:	 Запуск тестов в Jenkins</h2>
-
+<p>Для запуска тестов используется инструмент CI/CD под названием <b>Jenkins</b></p>
+</br>
+</br>
 ```
 clean
 test
