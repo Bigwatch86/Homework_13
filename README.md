@@ -15,7 +15,7 @@
 
 
 <h2>:books:	 Стек технологий</h2>
-
+<p>
 <img src="images/logo/Allure_Report.svg" height="48" width="48"> 
 <img src="images/logo/GitHub.svg" height="48" width="48">
 <img src="images/logo/Gradle.svg" height="48" width="48">
@@ -24,7 +24,7 @@
 <img src="images/logo/Selenide.svg" height="48" width="48">
 <img src="images/logo/Selenoid.svg" height="48" width="48">
 <img src="images/logo/Telegram.svg" height="48" width="48">
-
+<\p>
 
 <h2>:books:	 Запуск тестов в Jenkins</h2>
 
