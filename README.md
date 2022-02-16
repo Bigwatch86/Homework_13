@@ -46,4 +46,6 @@ test
 
 <h2>:bar_chart:	 Отчет о результатах тестирования в Allure Report</h2>
 
-
+<p align="center">
+<img title="Allure Overview" src="images/screenshots/overview.png">
+</p>
