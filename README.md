@@ -16,20 +16,20 @@
 
 <h2>:books:	 Стек технологий</h2>
 
+
 <p>
-  
-  <img title="Allure Report" src="images/logo/Allure_Report.svg" height="48" width="48"> 
-  <img title="GitHub" src="images/logo/GitHub.svg" height="48" width="48">
-  <img title="Gradle" src="images/logo/Gradle.svg" height="48" width="48">
-  <img title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg" height="48" width="48">
-  <img title="JUnit5" src="images/logo/JUnit5.svg" height="48" width="48">
-  <img title="Selenide" src="images/logo/Selenide.svg" height="48" width="48">
-  <img title="Selenoid" src="images/logo/Selenoid.svg" height="48" width="48">
-  <img title="Telegram" src="images/logo/Telegram.svg" height="48" width="48">
-  <img title="Java" src="images/logo/Java.svg" height="48" width="48">
-  <img title="Jenkins" src="images/logo/Jenkins.svg" height="48" width="48">
-  
+<img title="Allure Report" src="images/logo/Allure_Report.svg" height="48" width="48"> 
+<img title="GitHub" src="images/logo/GitHub.svg" height="48" width="48">
+<img title="Gradle" src="images/logo/Gradle.svg" height="48" width="48">
+<img title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg" height="48" width="48">
+<img title="JUnit5" src="images/logo/JUnit5.svg" height="48" width="48">
+<img title="Selenide" src="images/logo/Selenide.svg" height="48" width="48">
+<img title="Selenoid" src="images/logo/Selenoid.svg" height="48" width="48">
+<img title="Telegram" src="images/logo/Telegram.svg" height="48" width="48">
+<img title="Java" src="images/logo/Java.svg" height="48" width="48">
+<img title="Jenkins" src="images/logo/Jenkins.svg" height="48" width="48"> 
 </p>
+
 
 <h2>:arrow_forward:	 Запуск тестов в Jenkins</h2>
 
