@@ -64,7 +64,7 @@ test
 </p>
 
 
-<h2>:mailbox_with_mail:	 Уведомления в Telegram</h2>
+<h2>:mailbox_with_mail:	 Уведомления в Telegram с использованием бота</h2>
 <p align="center">
 <img title="Telegram notification" src="images/screenshots/telegram_message.png">
 </p>
