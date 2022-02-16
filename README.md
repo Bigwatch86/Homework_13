@@ -24,7 +24,7 @@
 <img src="images/logo/Selenide.svg" height="48" width="48">
 <img src="images/logo/Selenoid.svg" height="48" width="48">
 <img src="images/logo/Telegram.svg" height="48" width="48">
-<\p>
+</p>
 
 <h2>:books:	 Запуск тестов в Jenkins</h2>
 
