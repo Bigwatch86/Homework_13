@@ -52,10 +52,12 @@ test
 
 <p><b>На странице сборки выбираем "Собрать с параметрами": </b>
 </br>
+</br>
 <img title="Jenkins" src="images/screenshots/jenkins_1.png">
 </p>
 
 <p><b>Выбираем необходимые параметры запуска и нажимаем "Собрать": </b>
+</br>
 </br>
 <img title="Jenkins" src="images/screenshots/jenkins_2.png">
 </p>
