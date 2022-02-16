@@ -69,8 +69,9 @@ test
 
 
 <h2>:mailbox_with_mail:	 Уведомления в Telegram с использованием бота</h2>
-<p>После окончания сборки в Телеграм отправляется уведомление со ссылкой на отчёт.
-<img title="Telegram notification" src="images/screenshots/telegram_message.png">
+<p><i>После окончания сборки в Телеграм отправляется уведомление со ссылкой на отчёт. </i>
+  
+  <img title="Telegram notification" src="images/screenshots/telegram_message.png">
 </p>
 
 
